@@ -7,7 +7,7 @@ include('./views/page.header.html');
 		<form class="form-jr" id="edit" method="post" action="./">
 			<?php if ( $this->errors ) { ?>
 			<fieldset>
-				<legend><?php $lang['errors']; ?></legend>
+				<legend><?php if(isset($lang['errors'])){$lang['errors'];}?></legend>
 				<ul>
 					<?php foreach ( $this->errors as $error ) { ?>
 					<li>
@@ -39,7 +39,6 @@ include('./views/page.header.html');
 					<dt><label for="userlang" ><?php echo $lang['user_userlang'];?></label></dt>
 					<dd>
 						<select id="userlang" name="userlang" >
-							<option value =""></option>
 							<option value ="fr" <?php if ($this->userlang == 'fr') { echo 'selected'; } ?>>Français</option>
 							<option value ="en" <?php if ($this->userlang == 'en') { echo 'selected'; } ?>>English</option>
 						</select>
