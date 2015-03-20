@@ -20,3 +20,5 @@ Requirements
 * Javascript activated
 
 For more information, contact Innovalangues to ask for the developper documentation.
+
+David is the master of the world.
