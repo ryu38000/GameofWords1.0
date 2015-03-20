@@ -29,7 +29,7 @@ class diviner_game
 	{
 		$this->mode = $mode;
 	}
-
+//blabla
 	public function process()
 	{
 		if ( $this->init() )
